@@ -14,7 +14,7 @@ toggleWorldTooltips = Y
 ; I'm using the letter 'y' for example.
 
 ; When LAlt is pressed, execute the ToggleWorldTips() function.
-$LAlt::ToggleWorldTips()
+$Pause::ToggleWorldTips()
 
 ; Toggle function.
 ToggleWorldTips()
