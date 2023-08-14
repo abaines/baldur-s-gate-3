@@ -17,18 +17,18 @@ $LAlt::ToggleWorldTips()
 ; Toggle function.
 ToggleWorldTips()
 {
-global toggleWorldTooltips := !toggleWorldTooltips
+	global toggleWorldTooltips := !toggleWorldTooltips
 
-if (!toggleWorldTooltips)
-{
-SendInput {y Up}
-}
-else
-{
-SendInput {y Down}
-}
+	if (!toggleWorldTooltips)
+	{
+		SendInput {y Up}
+	}
+	else
+	{
+		SendInput {y Down}
+	}
 
-return
+	return
 }
 
 ; Press NumLock to suspend the script so you can use LAlt normally.
