@@ -9,7 +9,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; ======================== Begin ===========================
 ; Set your world tooltips key in the BG3 OS options to something other than LAlt.
-; I'm using the letter 'CapsLock' for example.
+; I'm using the letter 'ScrollLock' for example.
 
 ; When LAlt is pressed, execute the ToggleWorldTips() function.
 $Pause::ToggleWorldTips()
@@ -17,7 +17,7 @@ $Pause::ToggleWorldTips()
 ; Toggle function.
 ToggleWorldTips()
 {
-	SendInput {CapsLock Down}
+	SendInput {ScrollLock Down}
 
 	return
 }
