@@ -17,6 +17,11 @@ $Pause::ToggleWorldTips()
 ; Toggle function.
 ToggleWorldTips()
 {
+
+	SendInput {ScrollLock Up}
+
+	Sleep, 1
+
 	SendInput {ScrollLock Down}
 
 	return
