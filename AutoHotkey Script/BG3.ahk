@@ -11,18 +11,21 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Set your world tooltips key in the BG3 OS options to something other than LAlt.
 ; I'm using the letter 'ScrollLock' for example.
 
+SplashTextOn, 200, 50, BG3.ahk, Started
+
 ; When LAlt is pressed, execute the ToggleWorldTips() function.
 $Pause::ToggleWorldTips()
 
 ; Toggle function.
 ToggleWorldTips()
 {
-
+	SplashTextOn, 200, 50, BG3.ahk, ToggleWorldTips
 	SendInput {ScrollLock Up}
 
 	Sleep, 1
 
 	SendInput {ScrollLock Down}
+	SplashTextOff ; Turn it off
 
 	return
 }
